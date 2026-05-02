@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clip Forge — Dashboard</title>
+<meta name="theme-color" content="#0f172a">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f172a;--surface:#1e293b;--surface2:#334155;--border:#475569;--text:#f1f5f9;--muted:#94a3b8;--dim:#64748b;--blue:#3b82f6;--green:#22c55e;--red:#ef4444;--yellow:#eab308;--purple:#a855f7;--radius:12px}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+
+nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.95rem}
+.logo-icon{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+.nav-links{display:flex;gap:4px}
+.nav-links a{color:var(--muted);font-size:.8rem;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:6px;cursor:pointer;transition:all .15s}
+.nav-links a:hover,.nav-links a.active{background:var(--surface2);color:var(--text)}
+
+.container{max-width:960px;margin:0 auto;padding:24px}
+.page{display:none}.page.active{display:block}
+
+/* Status bar */
+.status-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px}
+.status-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.status-card .label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+.status-card .value{font-size:1.5rem;font-weight:900}
+.status-card .sub{font-size:.72rem;color:var(--dim);margin-top:2px}
+
+/* Grid */
+.grid{display:grid;gap:12px}
+.grid2{grid-template-columns:1fr 1fr}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.card-title{font-size:.9rem;font-weight:800}
+.badge{font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.badge-green{background:rgba(34,197,94,.12);color:var(--green)}
+.badge-red{background:rgba(239,68,68,.12);color:var(--red)}
+.badge-yellow{background:rgba(234,179,8,.12);color:var(--yellow)}
+.badge-blue{background:rgba(59,130,246,.12);color:var(--blue)}
+.badge-purple{background:rgba(168,85,247,.12);color:var(--purple)}
+
+/* Tables */
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);padding:8px 10px;border-bottom:1px solid var(--border)}
+td{font-size:.82rem;padding:10px;border-bottom:1px solid rgba(71,85,105,.3)}
+td.mono{font-family:'SF Mono',Menlo,monospace;font-size:.75rem;color:var(--muted)}
+
+/* Channel cards */
+.ch-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.ch-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.ch-icon{width:44px;height:44px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.ch-name{font-size:1rem;font-weight:800}
+.ch-meta{font-size:.75rem;color:var(--muted)}
+.ch-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.ch-stat{text-align:center;padding:8px;background:var(--bg);border-radius:8px}
+.ch-stat b{display:block;font-size:1rem;font-weight:900;color:var(--blue)}
+.ch-stat small{font-size:.65rem;color:var(--dim)}
+
+/* Campaign cards */
+.camp{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.camp-name{font-size:.88rem;font-weight:800;margin-bottom:4px}
+.camp-meta{font-size:.75rem;color:var(--muted);line-height:1.5}
+.camp-stats{display:flex;gap:16px;margin-top:10px;flex-wrap:wrap}
+.camp-stat{font-size:.75rem;color:var(--muted)}
+.camp-stat b{color:var(--text)}
+
+/* Log viewer */
+.log-box{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:16px;font-family:'SF Mono',Menlo,monospace;font-size:.72rem;line-height:1.7;color:var(--muted);max-height:400px;overflow-y:auto;white-space:pre-wrap;word-break:break-all}
+.log-box .ok{color:var(--green)}.log-box .err{color:var(--red)}.log-box .warn{color:var(--yellow)}.log-box .info{color:var(--blue)}
+
+/* Action buttons */
+.btn{padding:8px 16px;border-radius:8px;font-size:.8rem;font-weight:700;border:none;cursor:pointer;transition:all .15s}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:#2563eb}
+.btn-ghost{background:var(--surface2);color:var(--text)}.btn-ghost:hover{background:var(--border)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+
+.section-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin-bottom:12px}
+
+footer{padding:20px;text-align:center;font-size:.7rem;color:var(--dim);border-top:1px solid var(--border);margin-top:40px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><div class="logo-icon">🎬</div>Clip Forge</div>
+  <div class="nav-links">
+    <a class="active" onclick="showPage('overview')">Overview</a>
+    <a onclick="showPage('channels')">Channels</a>
+    <a onclick="showPage('campaigns')">Campaigns</a>
+    <a onclick="showPage('submissions')">Submissions</a>
+    <a onclick="showPage('logs')">Logs</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<div class="container page active" id="pg-overview">
+  <div class="actions">
+    <button class="btn btn-blue" onclick="runPipeline()">▶ Run Pipeline Now</button>
+    <button class="btn btn-ghost" onclick="scrapeWhop()">🔄 Scrape Whop Campaigns</button>
+  </div>
+  <div class="status-bar" id="statusBar"></div>
+  <div class="section-label">Last Pipeline Run</div>
+  <div class="log-box" id="lastLog" style="max-height:200px;margin-bottom:24px">Loading...</div>
+  <div class="section-label">Active Channels</div>
+  <div class="grid grid2" id="overviewChannels"></div>
+</div>
+
+<!-- CHANNELS -->
+<div class="container page" id="pg-channels">
+  <div class="section-label">Channel Configuration</div>
+  <div class="grid" id="channelList"></div>
+</div>
+
+<!-- CAMPAIGNS -->
+<div class="container page" id="pg-campaigns">
+  <div class="actions">
+    <button class="btn btn-blue" onclick="scrapeWhop()">🔄 Refresh from Whop</button>
+  </div>
+  <div class="section-label">Whop Clip Farm Campaigns</div>
+  <div class="grid" id="campaignList"></div>
+</div>
+
+<!-- SUBMISSIONS -->
+<div class="container page" id="pg-submissions">
+  <div class="section-label">Submitted Clips</div>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th>Video</th><th>Campaign</th><th>Submitted</th><th>Link</th></tr></thead>
+    <tbody id="subTable"></tbody>
+  </table></div>
+</div>
+
+<!-- LOGS -->
+<div class="container page" id="pg-logs">
+  <div class="actions">
+    <button class="btn btn-ghost" onclick="loadLogs()">Reload Logs</button>
+    <button class="btn btn-ghost" onclick="clearLogs()">Clear</button>
+  </div>
+  <div class="section-label">Pipeline Log</div>
+  <div class="log-box" id="fullLog">Loading...</div>
+</div>
+
+<footer>Clip Forge Dashboard · Automated YouTube Clipping Pipeline</footer>
+
+<script>
+const API='http://localhost:5678'; // n8n placeholder
+const WS='https://xacehhtgvubcqdoltazg.supabase.co';
+const SRK='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhhY2VoaHRndnViY3Fkb2x0YXpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mzk0Mjg2NywiZXhwIjoyMDg5NTE4ODY3fQ.5sqLtRtRnWEEuytTsfGhh1hmrQkTilL4Bd_rMrqmQ9A';
+
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.getElementById('pg-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Load data from local files via relative paths (same-origin)
+async function loadJSON(path){
+  try{const r=await fetch(path);return await r.json()}catch{return null}
+}
+
+async function init(){
+  const ch=await loadJSON('channels.json');
+  const ca=await loadJSON('campaigns.json');
+  const sub=await loadJSON('submitted.json');
+  renderStatus(ch,ca,sub);
+  renderChannels(ch);
+  renderCampaigns(ca);
+  renderSubmissions(sub);
+  loadLogs();
+}
+
+function renderStatus(ch,ca,sub){
+  const channels=ch?.channels||[];
+  const active=channels.filter(c=>c.active).length;
+  const campaigns=ca?.campaigns||[];
+  const subs=sub||[];
+  const ytCampaigns=campaigns.filter(c=>!c.skip_platforms?.includes('youtube'));
+  const bar=document.getElementById('statusBar');
+  bar.innerHTML=`
+    <div class="status-card"><div class="label">Active Channels</div><div class="value" style="color:var(--green)">${active}</div><div class="sub">${channels.length} total</div></div>
+    <div class="status-card"><div class="label">Campaigns</div><div class="value" style="color:var(--blue)">${campaigns.length}</div><div class="sub">${ytCampaigns.length} YouTube eligible</div></div>
+    <div class="status-card"><div class="label">Submitted Clips</div><div class="value" style="color:var(--purple)">${subs.length}</div><div class="sub">to Whop</div></div>
+    <div class="status-card"><div class="label">Last Scrape</div><div class="value" style="color:var(--yellow);font-size:.9rem">${ca?.last_scraped?new Date(ca.last_scraped).toLocaleDateString():'Never'}</div><div class="sub">${ca?.last_scraped?new Date(ca.last_scraped).toLocaleTimeString():''}</div></div>
+  `;
+  // Overview channel cards
+  const oc=document.getElementById('overviewChannels');
+  oc.innerHTML=channels.map(c=>`<div class="ch-card">
+    <div class="ch-header"><div class="ch-icon">${c.active?'🟢':'🔴'}</div><div><div class="ch-name">${c.name}</div><div class="ch-meta">${c.niche} · ${c.posts_per_day}/day · ${c.channel_id}</div></div></div>
+    <div class="ch-stats"><div class="ch-stat"><b>${c.sources.length}</b><small>Sources</small></div><div class="ch-stat"><b>${c.keywords.length}</b><small>Keywords</small></div><div class="ch-stat"><b>${c.active?'ON':'OFF'}</b><small>Status</small></div></div>
+  </div>`).join('');
+}
+
+function renderChannels(ch){
+  const channels=ch?.channels||[];
+  const el=document.getElementById('channelList');
+  el.innerHTML=channels.map(c=>`<div class="ch-card">
+    <div class="ch-header"><div class="ch-icon">${c.active?'🟢':'🔴'}</div><div><div class="ch-name">${c.name} <span class="badge ${c.active?'badge-green':'badge-red'}">${c.active?'Active':'Disabled'}</span></div><div class="ch-meta">Channel ID: ${c.channel_id}</div></div></div>
+    <div style="margin-top:10px"><div style="font-size:.7rem;font-weight:700;color:var(--dim);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">Sources</div>
+    <div style="display:flex;flex-wrap:wrap;gap:4px">${c.sources.map(s=>`<span class="badge badge-blue">${s}</span>`).join('')}</div></div>
+    <div style="margin-top:10px"><div style="font-size:.7rem;font-weight:700;color:var(--dim);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">Keywords</div>
+    <div style="display:flex;flex-wrap:wrap;gap:4px">${c.keywords.map(k=>`<span class="badge badge-purple">${k}</span>`).join('')}</div></div>
+    <div class="ch-stats"><div class="ch-stat"><b>${c.posts_per_day}</b><small>Posts/day</small></div><div class="ch-stat"><b>${c.sources.length}</b><small>Sources</small></div><div class="ch-stat"><b>${c.keywords.length}</b><small>Keywords</small></div></div>
+  </div>`).join('');
+}
+
+function renderCampaigns(ca){
+  const campaigns=ca?.campaigns||[];
+  const el=document.getElementById('campaignList');
+  el.innerHTML=campaigns.map(c=>{
+    const ytEligible=!c.skip_platforms?.includes('youtube');
+    const tags=(c.tags||[]).map(t=>`<span class="badge badge-purple">${t}</span>`).join('');
+    const handles=(c.rules?.handles||[]).map(h=>`<span class="badge badge-blue">${h}</span>`).join('');
+    const platform=c.skip_platforms?.includes('youtube')?'TikTok Only':'YouTube + TikTok';
+    return `<div class="camp">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><span class="camp-name">${c.name}</span><span class="badge ${ytEligible?'badge-green':'badge-yellow'}">${platform}</span></div>
+      <div class="camp-meta">CPM: <b style="color:var(--green)">${c.cpm}</b> · Budget: <b>${c.paid_out}</b> · ${c.views} views · ${c.creators} creator${c.creators!==1?'s':''}</div>
+      <div class="camp-stats">
+        <div class="camp-stat">Sources: <b>${c.source_urls?.length||0}</b></div>
+        <div class="camp-stat">Age: <b>${c.age||'?'}</b></div>
+      </div>
+      ${handles?`<div style="margin-top:8px"><div style="font-size:.65rem;color:var(--dim);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">Required Tags</div>${handles}</div>`:''}
+      ${c.rules?.tag_requirement?`<div style="margin-top:6px;font-size:.72rem;color:var(--yellow)">⚠ ${c.rules.tag_requirement}</div>`:''}
+      ${c.rules?.comment_requirement?`<div style="margin-top:4px;font-size:.72rem;color:var(--yellow)">📌 ${c.rules.comment_requirement}</div>`:''}
+      ${c.rules?.caption_guidance?`<div style="margin-top:4px;font-size:.72rem;color:var(--muted)">💡 ${c.rules.caption_guidance}</div>`:''}
+    </div>`;
+  }).join('');
+}
+
+function renderSubmissions(sub){
+  const subs=sub||[];
+  const el=document.getElementById('subTable');
+  if(!subs.length){el.innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--dim);padding:24px">No submissions yet</td></tr>';return}
+  el.innerHTML=subs.map(s=>`<tr>
+    <td style="font-weight:700;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.title||s.video_id}</td>
+    <td><span class="badge badge-blue">${(s.campaign||'').split('[')[0].trim()}</span></td>
+    <td class="mono">${s.submitted_at?new Date(s.submitted_at*1000).toLocaleString():'?'}</td>
+    <td><a href="${s.url}" target="_blank" style="color:var(--blue);text-decoration:none;font-size:.75rem">Open ↗</a></td>
+  </tr>`).join('');
+}
+
+async function loadLogs(){
+  try{
+    const r=await fetch('/logs/clip-pipeline.log');
+    const txt=await r.text();
+    const html=txt.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/failed|error|Timeout/gi,m=>`<span class="err">${m}</span>`).replace(/ready|complete|posted/gi,m=>`<span class="ok">${m}</span>`).replace(/Processing\.\.\./g,m=>`<span class="info">${m}</span>`).replace(/Warning/gi,m=>`<span class="warn">${m}</span>`);
+    document.getElementById('fullLog').innerHTML=html;
+    document.getElementById('lastLog').innerHTML=html.split('\n').slice(-25).join('\n');
+  }catch(e){
+    document.getElementById('fullLog').textContent='Could not load logs — run locally or connect to server';
+    document.getElementById('lastLog').textContent='Log file not accessible';
+  }
+}
+
+function clearLogs(){document.getElementById('fullLog').textContent=''}
+
+function runPipeline(){
+  alert('Run this from terminal:\n\ncd ~/workspace/clipping && python3 run_pipeline.py');
+}
+function scrapeWhop(){
+  alert('Run this from terminal:\n\ncd ~/workspace/clipping && python3 whop_scraper_v5.py');
+}
+
+init();
+</script>
+</body>
+</html>
