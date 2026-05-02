@@ -1,1 +1,53 @@
-/Users/jackserver/.openclaw/workspace/clipping/channels/channels.json
+{
+  "channels": [
+    {
+      "name": "Clip Forge",
+      "niche": "fitness",
+      "channel_id": "UCUm90N9YLeupbVSsxXqv4fA",
+      "keywords": [
+        "fitness",
+        "gym",
+        "workout",
+        "strength",
+        "bodybuilding",
+        "dadstrength"
+      ],
+      "sources": [
+        "MrBeast",
+        "More Plates More Dates",
+        "fitness podcasts",
+        "gym fails"
+      ],
+      "posts_per_day": 3,
+      "active": true
+    },
+    {
+      "name": "Youloveclips",
+      "niche": "entertainment",
+      "channel_id": "UCgrv7cVj6mD0LqawH9epsRg",
+      "keywords": [
+        "entertainment",
+        "viral",
+        "clips",
+        "funny",
+        "challenge",
+        "viral clips"
+      ],
+      "sources": [
+        "viral YouTube",
+        "challenge videos",
+        "entertainment"
+      ],
+      "posts_per_day": 3,
+      "active": false
+    }
+  ],
+  "schedule": {
+    "slot1": "08:00",
+    "slot2": "12:00",
+    "slot3": "18:00"
+  },
+  "ssemble_api_key": "sk_ssemble_26e33d1b8d3a1f4e181a8134579db9a9",
+  "whop_session": "~/.whop-session",
+  "youtube_token": "/Users/jackserver/.openclaw/workspace/clipping/youtube_token.json"
+}

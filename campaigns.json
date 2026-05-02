@@ -1,1 +1,140 @@
-/Users/jackserver/.openclaw/workspace/clipping/campaigns/campaigns.json
+{
+  "last_scraped": "2026-04-29T20:20:52.591996",
+  "clip_farm_url": "https://whop.com/joined/clip-farm-official/",
+  "rewards_url": "https://whop.com/joined/clip-farm-official/v2-content-rewards-sKCcnfigfcLoSb/app/",
+  "campaigns": [
+    {
+      "name": "Oxis Grey Mullet [Audio Clipping]",
+      "tags": [
+        "Clipping",
+        "MUSIC"
+      ],
+      "cpm": "$1.00/1k views",
+      "paid_out": "$69.68 / $2,000",
+      "views": "87k",
+      "creators": 1,
+      "age": "5 days ago",
+      "source_url": "https://www.youtube.com/watch?v=prH_q0-T7Vk",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=prH_q0-T7Vk",
+        "https://www.youtube.com/watch?v=dYTmaG-cJQ8",
+        "https://www.youtube.com/watch?v=y9xKUPkJZ78"
+      ],
+      "skip_platforms": [
+        "youtube"
+      ],
+      "platform": "tiktok_only",
+      "rules": {
+        "min_payout": 20,
+        "max_payout": 300,
+        "handles": [],
+        "caption_guidance": "Caption should feel natural and relate to the song's vibe (ex: \"this song feels like...\" or \"my summer anthem\")"
+      }
+    },
+    {
+      "name": "Nana Prempeh [Viral Clipping]",
+      "tags": [
+        "Clipping",
+        "ENTERTAINMENT"
+      ],
+      "cpm": "$1.00/1k views",
+      "paid_out": "$738.50 / $3,750",
+      "views": "737k",
+      "creators": 1,
+      "age": "5 days ago",
+      "source_url": "https://www.youtube.com/watch?v=ZDMsUM5C-Q4",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=ZDMsUM5C-Q4",
+        "https://www.youtube.com/watch?v=EeSFl2TUY3s",
+        "https://www.youtube.com/watch?v=Yyln3GiHLw0",
+        "https://www.youtube.com/watch?v=ZYgnETUt988",
+        "https://www.youtube.com/watch?v=1NjXgDHqD54",
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://www.youtube.com/watch?v=kro-xxDbhi0"
+      ],
+      "rules": {
+        "min_payout": 1,
+        "max_payout": 200,
+        "handles": [
+          "@realnanaprempeh"
+        ],
+        "tag_requirement": "Must tag @realnanaprempeh in the Short's title",
+        "comment_requirement": "Pinned Comment: Full video on Nana's channel @realnanaprempeh"
+      }
+    },
+    {
+      "name": "Gawne | Take Me Home [Music Video Clipping]",
+      "tags": [
+        "Clipping",
+        "ENTERTAINMENT"
+      ],
+      "cpm": "$1.25/1k views",
+      "paid_out": "$333.48 / $2,000",
+      "views": "255k",
+      "creators": 1,
+      "age": "6 days ago",
+      "source_url": "https://www.youtube.com/watch?v=bO_3K-hJYvg",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=bO_3K-hJYvg",
+        "https://www.youtube.com/watch?v=VeJ-nY3e0s4"
+      ],
+      "rules": {
+        "min_payout": 1,
+        "max_payout": 200,
+        "handles": [
+          "@lukegawne"
+        ],
+        "caption_requirement": "- Caption must include: \"Take Me Home On Spotify @lukegawne\""
+      },
+      "platform": "tiktok_instagram_only",
+      "skip_platforms": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "Bloom Shark Tank Clipping",
+      "tags": [
+        "Clipping",
+        "ENTERTAINMENT"
+      ],
+      "cpm": "$0.75/1k views",
+      "paid_out": "$3,975.77 / $12,000",
+      "views": "8.0M",
+      "creators": 1,
+      "age": "2 weeks ago",
+      "source_url": "https://www.youtube.com/watch?v=sAto3yCMwkM",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=sAto3yCMwkM",
+        "https://www.youtube.com/watch?v=rkCoJDmp5cE",
+        "https://www.youtube.com/watch?v=OzVv56UGlR4",
+        "https://www.youtube.com/watch?v=bO_3K-hJYvg"
+      ],
+      "rules": {
+        "min_payout": 1,
+        "max_payout": 200,
+        "handles": []
+      }
+    },
+    {
+      "name": "David Dobrik",
+      "handle": "@daviddobrik",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=kro-xxDbhi0"
+      ],
+      "rules": {
+        "tag_in_title": true,
+        "hashtag": "#daviddobrik",
+        "comment": null,
+        "platforms": [
+          "tiktok",
+          "instagram",
+          "youtube"
+        ]
+      },
+      "platform": "",
+      "skip_platforms": [],
+      "payout": "$1-$200 per clip",
+      "description": "Clip David Dobrik content"
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+[2026-04-26 18:00:00] ==================================================
+[2026-04-26 18:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-26 18:00:00] Active channels: 1
+[2026-04-26 18:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-26 18:00:00]   Source: https://www.youtube.com/watch?v=xs1DEDhKwKs
+[2026-04-26 18:00:05]   Ssemble processing: 69eea70550819bf0c3c70f2a
+[2026-04-26 18:06:32]   Clips ready!
+[2026-04-26 18:06:33]   Downloading: Is Dad Strength Even Real? (score: 100)
+Traceback (most recent call last):
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 263, in <module>
+    run()
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 223, in run
+    clips = ssemble_get_clips(api_key, request_id)
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 95, in ssemble_get_clips
+    urllib.request.urlretrieve(url, filepath)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 239, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+[2026-04-27 08:00:01] ==================================================
+[2026-04-27 08:00:01] ClipMaster Pipeline v2 starting...
+[2026-04-27 08:00:01] Active channels: 1
+[2026-04-27 08:00:01] 
+--- Clip Forge (fitness) ---
+[2026-04-27 08:00:01]   Source: https://www.youtube.com/watch?v=xs1DEDhKwKs
+[2026-04-27 08:00:06]   Ssemble processing: 69ef6be622c6975235e1ab05
+[2026-04-27 08:00:07]   Processing... fetching_video (20%)
+[2026-04-27 08:07:06]   Processing... finding_highlights (60%)
+[2026-04-27 08:10:18]   Timeout after 600s
+[2026-04-27 08:10:18] 
+Pipeline complete!
+[2026-04-27 12:00:00] ==================================================
+[2026-04-27 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-27 12:00:00] Active channels: 1
+[2026-04-27 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-27 12:00:00]   Source: https://www.youtube.com/watch?v=xs1DEDhKwKs
+[2026-04-27 12:00:06]   Ssemble processing: 69efa426b94aa76b09da744b
+[2026-04-27 12:00:07]   Processing... fetching_video (20%)
+[2026-04-27 12:06:51]   Clips ready!
+[2026-04-27 12:06:53]   Downloading: Is Dad Strength Even Real? (score: 100)
+[2026-04-27 12:07:00]   Downloading: Construction Dad vs Fortnite Kid (score: 98)
+[2026-04-27 12:07:10]   Downloading: Teens Scared of Getting Old (score: 97)
+[2026-04-27 12:07:15]   Downloading: Dads Win Strength, Teens Win Speed (score: 93)
+[2026-04-27 12:07:19]   Upload failed: No module named 'google'
+[2026-04-27 12:07:19]   Upload failed: No module named 'google'
+[2026-04-27 12:07:19]   Upload failed: No module named 'google'
+[2026-04-27 12:07:19]   Clip Forge: 0 clips posted
+[2026-04-27 12:07:19] 
+Pipeline complete!
+[2026-04-27 18:00:00] ==================================================
+[2026-04-27 18:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-27 18:00:00] Active channels: 1
+[2026-04-27 18:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-27 18:00:00]   Source: https://www.youtube.com/watch?v=xs1DEDhKwKs
+[2026-04-27 18:00:06]   Ssemble processing: 69eff886b94aa76b09da7b19
+[2026-04-27 18:03:07]   Processing... finding_highlights (60%)
+[2026-04-27 18:06:07]   Processing... finding_highlights (60%)
+[2026-04-27 18:06:55]   Clips ready!
+[2026-04-27 18:06:56]   Downloading: Is Dad Strength Actually Real? (score: 100)
+[2026-04-27 18:07:17]   Downloading: Construction Dad vs Fortnite Kid (score: 96)
+[2026-04-27 18:07:38]   Downloading: Mass Moves Mass, Period (score: 92)
+[2026-04-27 18:07:59]   Downloading: Teens Scared of Becoming Dads (score: 85)
+[2026-04-27 18:08:10]   Upload failed: No module named 'google'
+[2026-04-27 18:08:10]   Upload failed: No module named 'google'
+[2026-04-27 18:08:10]   Upload failed: No module named 'google'
+[2026-04-27 18:08:10]   Clip Forge: 0 clips posted
+[2026-04-27 18:08:10] 
+Pipeline complete!
+[2026-04-28 08:00:01] ==================================================
+[2026-04-28 08:00:01] ClipMaster Pipeline v2 starting...
+[2026-04-28 08:00:01] Active channels: 1
+[2026-04-28 08:00:01] 
+--- Clip Forge (fitness) ---
+[2026-04-28 08:00:01]   Source: https://www.youtube.com/watch?v=xs1DEDhKwKs
+[2026-04-28 08:00:06]   Ssemble processing: 69f0bd666746c61099a73b3f
+[2026-04-28 08:00:07]   Processing... queued (0%)
+[2026-04-28 08:07:07]   Processing... finalizing (80%)
+[2026-04-28 08:07:23]   Clips ready!
+[2026-04-28 08:07:24]   Downloading: Dad Strength vs Teen Bodybuilders (score: 95)
+[2026-04-28 08:07:34]   Downloading: Energy Drinks vs Life Experience (score: 100)
+[2026-04-28 08:07:40]   Downloading: Teens Roast Dads At The Gym (score: 91)
+[2026-04-28 08:07:48]   Upload failed: No module named 'google'
+[2026-04-28 08:07:48]   Upload failed: No module named 'google'
+[2026-04-28 08:07:48]   Upload failed: No module named 'google'
+[2026-04-28 08:07:48]   Clip Forge: 0 clips posted
+[2026-04-28 08:07:48] 
+Pipeline complete!
+[2026-04-28 12:00:00] ==================================================
+[2026-04-28 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-28 12:00:00] Active channels: 1
+[2026-04-28 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-28 12:00:00]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 12:00:00]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 12:00:14]   Ssemble processing: 69f0f5ae6746c61099a740a8
+[2026-04-28 12:04:15]   Processing... finding_highlights (60%)
+[2026-04-28 12:06:06]   Clips ready!
+[2026-04-28 12:06:07]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 12:06:59]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/0tQk3iwg4S4
+[2026-04-28 12:06:59]   Clip Forge: 1 clips posted
+[2026-04-28 12:06:59] 
+Pipeline complete!
+[2026-04-28 18:00:00] ==================================================
+[2026-04-28 18:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-28 18:00:00] Active channels: 5
+[2026-04-28 18:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-28 18:00:00]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 18:00:00]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 18:00:05]   Ssemble processing: 69f14a056746c61099a74713
+[2026-04-28 18:00:06]   Processing... queued (0%)
+[2026-04-28 18:04:05]   Processing... finalizing (80%)
+[2026-04-28 18:05:25]   Clips ready!
+[2026-04-28 18:05:26]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 18:06:19]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/o6iCpoOhSuk
+[2026-04-28 18:06:19]   Clip Forge: 1 clips posted
+[2026-04-28 18:06:19] 
+--- Coin Clips (finance) ---
+[2026-04-28 18:06:19]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 18:06:19]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 18:06:20]   Ssemble processing: 69f14b7c6746c61099a7473f
+[2026-04-28 18:06:21]   Processing... queued (0%)
+[2026-04-28 18:10:20]   Processing... finalizing (80%)
+[2026-04-28 18:11:08]   Clips ready!
+[2026-04-28 18:11:09]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 18:12:14]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/b7M1y3jiifo
+[2026-04-28 18:12:14]   Coin Clips: 1 clips posted
+[2026-04-28 18:12:14] 
+--- Spawn Point (gaming) ---
+[2026-04-28 18:12:14]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 18:12:14]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 18:12:15]   Ssemble processing: 69f14cdf6746c61099a74763
+[2026-04-28 18:12:16]   Processing... queued (0%)
+[2026-04-28 18:16:16]   Processing... finalizing (80%)
+[2026-04-28 18:17:19]   Clips ready!
+[2026-04-28 18:17:20]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 18:18:32]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/dweMF-1pFo8
+[2026-04-28 18:18:32]   Spawn Point: 1 clips posted
+[2026-04-28 18:18:32] 
+--- True Bites (crime) ---
+[2026-04-28 18:18:32]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 18:18:32]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 18:18:32]   Ssemble processing: 69f14e586746c61099a747a2
+[2026-04-28 18:18:33]   Processing... queued (0%)
+[2026-04-28 18:23:21]   Clips ready!
+[2026-04-28 18:23:22]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 18:24:24]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/zn1KmsdgHPY
+[2026-04-28 18:24:24]   True Bites: 1 clips posted
+[2026-04-28 18:24:24] 
+--- Brain Fuel (tech) ---
+[2026-04-28 18:24:24]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-28 18:24:24]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-28 18:24:25]   Ssemble processing: 69f14fb96746c61099a747d9
+[2026-04-28 18:24:26]   Processing... queued (0%)
+[2026-04-28 18:28:26]   Processing... finalizing (80%)
+[2026-04-28 18:29:14]   Clips ready!
+[2026-04-28 18:29:15]   Downloading: I Can Never Control It (score: 100)
+[2026-04-28 18:30:09]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/VybVfiyMxV4
+[2026-04-28 18:30:09]   Brain Fuel: 1 clips posted
+[2026-04-28 18:30:09] 
+Pipeline complete!
+[2026-04-29 08:00:00] ==================================================
+[2026-04-29 08:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-29 08:00:00] Active channels: 5
+[2026-04-29 08:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-29 08:00:00]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 08:00:00]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 08:00:06]   Ssemble processing: 69f20ee62caa1eac251d5024
+[2026-04-29 08:00:07]   Processing... queued (0%)
+[2026-04-29 08:05:45]   Clips ready!
+[2026-04-29 08:05:46]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 08:07:05]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/Y6By7xVswBM
+[2026-04-29 08:07:05]   Clip Forge: 1 clips posted
+[2026-04-29 08:07:05] 
+--- Coin Clips (finance) ---
+[2026-04-29 08:07:05]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 08:07:05]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 08:07:06]   Ssemble processing: 69f2108a2caa1eac251d505b
+[2026-04-29 08:14:04]   Clips ready!
+[2026-04-29 08:14:05]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 08:14:59]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/NGyjPVJrXc4
+[2026-04-29 08:14:59]   Coin Clips: 1 clips posted
+[2026-04-29 08:14:59] 
+--- Spawn Point (gaming) ---
+[2026-04-29 08:14:59]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 08:14:59]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 08:15:01]   Ssemble processing: 69f2126400ede463ab28ba5c
+[2026-04-29 08:15:02]   Processing... fetching_video (20%)
+[2026-04-29 08:20:01]   Processing... finding_highlights (60%)
+[2026-04-29 08:21:50]   Clips ready!
+[2026-04-29 08:21:52]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 08:23:03]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/qbnqodQ6nSc
+[2026-04-29 08:23:03]   Spawn Point: 1 clips posted
+[2026-04-29 08:23:03] 
+--- True Bites (crime) ---
+[2026-04-29 08:23:03]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 08:23:03]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 08:23:05]   Ssemble processing: 69f2144800ede463ab28ba9f
+[2026-04-29 08:30:05]   Processing... finalizing (80%)
+[2026-04-29 08:32:03]   Clips ready!
+[2026-04-29 08:32:05]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 08:34:09]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/e9gaqtL9fnU
+[2026-04-29 08:34:09]   True Bites: 1 clips posted
+[2026-04-29 08:34:09] 
+--- Brain Fuel (tech) ---
+[2026-04-29 08:34:09]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 08:34:09]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 08:34:13]   Ssemble processing: 69f216e300ede463ab28bb35
+[2026-04-29 08:36:14]   Processing... fetching_video (20%)
+Traceback (most recent call last):
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 290, in <module>
+    run()
+    ~~~^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 247, in run
+    if not ssemble_poll_status(api_key, request_id, timeout=1800):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 55, in ssemble_poll_status
+    resp = json.loads(urllib.request.urlopen(req, timeout=15).read())
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1325, in do_open
+    r = h.getresponse()
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+[2026-04-29 12:00:00] ==================================================
+[2026-04-29 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-29 12:00:00] Active channels: 5
+[2026-04-29 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-29 12:00:00]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 12:00:00]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 12:00:06]   Ssemble processing: 69f24726435d3660606d142d
+[2026-04-29 12:00:07]   Processing... queued (0%)
+[2026-04-29 12:07:06]   Clips ready!
+[2026-04-29 12:07:08]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 12:08:38]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/bi0LbWKqUOU
+[2026-04-29 12:08:38]   Clip Forge: 1 clips posted
+[2026-04-29 12:08:38] 
+--- Coin Clips (finance) ---
+[2026-04-29 12:08:38]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 12:08:38]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 12:08:46]   Ssemble processing: 69f2492c435d3660606d1486
+[2026-04-29 12:14:28]   Clips ready!
+[2026-04-29 12:14:29]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 12:15:12]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/KE70HholQQo
+[2026-04-29 12:15:12]   Coin Clips: 1 clips posted
+[2026-04-29 12:15:12] 
+--- Spawn Point (gaming) ---
+[2026-04-29 12:15:12]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 12:15:12]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 12:15:14]   Ssemble processing: 69f24ab1435d3660606d14c1
+[2026-04-29 12:21:11]   Clips ready!
+[2026-04-29 12:21:16]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 12:22:27]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/PPgT1gTIZrc
+[2026-04-29 12:22:27]   Spawn Point: 1 clips posted
+[2026-04-29 12:22:27] 
+--- True Bites (crime) ---
+[2026-04-29 12:22:27]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 12:22:27]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 12:22:28]   Ssemble processing: 69f24c64435d3660606d14f8
+[2026-04-29 12:28:41]   Clips ready!
+[2026-04-29 12:28:42]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 12:29:45]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/5jx9SaiSKFc
+[2026-04-29 12:29:45]   True Bites: 1 clips posted
+[2026-04-29 12:29:45] 
+--- Brain Fuel (tech) ---
+[2026-04-29 12:29:45]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 12:29:45]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 12:29:46]   Ssemble processing: 69f24e1a435d3660606d152f
+[2026-04-29 12:35:59]   Clips ready!
+[2026-04-29 12:36:00]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 12:37:12]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/C6paSCFl8Hw
+[2026-04-29 12:37:12]   Brain Fuel: 1 clips posted
+[2026-04-29 12:37:12] 
+Pipeline complete!
+[2026-04-29 18:00:00] ==================================================
+[2026-04-29 18:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-29 18:00:00] Active channels: 5
+[2026-04-29 18:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-29 18:00:00]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 18:00:00]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 18:00:06]   Ssemble processing: 69f29b86435d3660606d1a3b
+[2026-04-29 18:00:07]   Processing... queued (0%)
+[2026-04-29 18:04:56]   Clips ready!
+[2026-04-29 18:04:57]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 18:06:15]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/KJYB2qCdroQ
+[2026-04-29 18:06:15]   Clip Forge: 1 clips posted
+[2026-04-29 18:06:15] 
+--- Coin Clips (finance) ---
+[2026-04-29 18:06:15]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 18:06:15]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 18:06:20]   Ssemble processing: 69f29cfc435d3660606d1a69
+[2026-04-29 18:11:10]   Clips ready!
+[2026-04-29 18:11:11]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 18:12:45]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/66AVXmes960
+[2026-04-29 18:12:45]   Coin Clips: 1 clips posted
+[2026-04-29 18:12:45] 
+--- Spawn Point (gaming) ---
+[2026-04-29 18:12:45]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 18:12:45]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 18:12:46]   Ssemble processing: 69f29e7e435d3660606d1a8e
+[2026-04-29 18:12:47]   Processing... queued (0%)
+[2026-04-29 18:17:52]   Clips ready!
+[2026-04-29 18:17:53]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 18:19:40]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/Vf4vTipddBQ
+[2026-04-29 18:19:40]   Spawn Point: 1 clips posted
+[2026-04-29 18:19:40] 
+--- True Bites (crime) ---
+[2026-04-29 18:19:40]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 18:19:40]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 18:19:41]   Ssemble processing: 69f2a01d435d3660606d1ab2
+[2026-04-29 18:19:42]   Processing... queued (0%)
+[2026-04-29 18:26:24]   Clips ready!
+[2026-04-29 18:26:25]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 18:27:46]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/q1AS24ieWzA
+[2026-04-29 18:27:46]   True Bites: 1 clips posted
+[2026-04-29 18:27:46] 
+--- Brain Fuel (tech) ---
+[2026-04-29 18:27:46]   Using campaign: Oxis Grey Mullet [Audio Clipping]
+[2026-04-29 18:27:46]   Source: https://www.youtube.com/watch?v=prH_q0-T7Vk
+[2026-04-29 18:27:47]   Ssemble processing: 69f2a203435d3660606d1aec
+[2026-04-29 18:27:48]   Processing... queued (0%)
+[2026-04-29 18:32:20]   Clips ready!
+[2026-04-29 18:32:21]   Downloading: I Can Never Control It (score: 100)
+[2026-04-29 18:34:32]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/JhqBj-Ikeic
+[2026-04-29 18:34:32]   Brain Fuel: 1 clips posted
+[2026-04-29 18:34:32] 
+Pipeline complete!
+[2026-04-30 08:00:00] ==================================================
+[2026-04-30 08:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-30 08:00:00] Active channels: 5
+[2026-04-30 08:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-30 08:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 08:00:00]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 08:00:05]   Ssemble processing: 69f360655238dd6d59a8b251
+[2026-04-30 08:00:06]   Processing... queued (0%)
+[2026-04-30 08:09:51]   Clips ready!
+[2026-04-30 08:09:52]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-04-30 08:09:56]   Downloading: She Did 70 No Problem (score: 90)
+[2026-04-30 08:10:38]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/6r3aWsHLYhc
+[2026-04-30 08:10:39]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 08:11:10]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/OR4I1Q-cb7w
+[2026-04-30 08:11:10]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 08:11:10]   Clip Forge: 2 clips posted
+[2026-04-30 08:11:10] 
+--- Coin Clips (finance) ---
+[2026-04-30 08:11:10]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 08:11:10]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 08:11:16]   Ssemble processing: 69f363045238dd6d59a8b2b0
+[2026-04-30 08:11:17]   Processing... queued (0%)
+[2026-04-30 08:23:17]   Processing... finding_highlights (60%)
+[2026-04-30 08:27:17]   Processing... finding_highlights (60%)
+[2026-04-30 08:41:25]   Timeout after 1800s
+[2026-04-30 08:41:25] 
+--- Spawn Point (gaming) ---
+[2026-04-30 08:41:25]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 08:41:25]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 08:41:26]   Ssemble processing: 69f36a165238dd6d59a8b3bf
+Traceback (most recent call last):
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 345, in <module>
+    run()
+    ~~~^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 302, in run
+    if not ssemble_poll_status(api_key, request_id, timeout=1800):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 55, in ssemble_poll_status
+    resp = json.loads(urllib.request.urlopen(req, timeout=15).read())
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2026-04-30 12:00:00] ==================================================
+[2026-04-30 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-30 12:00:00] Active channels: 5
+[2026-04-30 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-30 12:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 12:00:00]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 12:00:05]   Ssemble processing: 69f398a5d2cb7ed144c28a57
+[2026-04-30 12:29:05]   Processing... finding_highlights (60%)
+[2026-04-30 12:30:08]   Timeout after 1800s
+[2026-04-30 12:30:08] 
+--- Coin Clips (finance) ---
+[2026-04-30 12:30:08]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 12:30:08]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 12:30:13]   Ssemble processing: 69f39fb5d2cb7ed144c28b5f
+[2026-04-30 12:30:14]   Processing... queued (0%)
+[2026-04-30 13:00:23]   Timeout after 1800s
+[2026-04-30 13:00:23] 
+--- Spawn Point (gaming) ---
+[2026-04-30 13:00:23]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 13:00:23]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 13:00:37]   Ssemble processing: 69f3a6d5d2cb7ed144c28c6a
+[2026-04-30 13:00:38]   Processing... queued (0%)
+[2026-04-30 13:07:37]   Processing... finding_highlights (60%)
+[2026-04-30 13:26:37]   Processing... finding_highlights (60%)
+[2026-04-30 13:30:37]   Timeout after 1800s
+[2026-04-30 13:30:37] 
+--- True Bites (crime) ---
+[2026-04-30 13:30:37]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 13:30:37]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 13:30:42]   Ssemble processing: 69f3ade2d2cb7ed144c28d9e
+[2026-04-30 13:30:43]   Processing... queued (0%)
+[2026-04-30 13:53:42]   Processing... finding_highlights (60%)
+[2026-04-30 13:57:42]   Processing... finding_highlights (60%)
+[2026-04-30 14:00:54]   Timeout after 1800s
+[2026-04-30 14:00:54] 
+--- Brain Fuel (tech) ---
+[2026-04-30 14:00:54]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 14:00:54]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 14:00:55]   Ssemble processing: 69f3b4f7d2cb7ed144c28ea0
+[2026-04-30 14:09:56]   Processing... finding_highlights (60%)
+[2026-04-30 14:13:56]   Processing... finding_highlights (60%)
+[2026-04-30 14:17:56]   Processing... finding_highlights (60%)
+[2026-04-30 14:31:01]   Timeout after 1800s
+[2026-04-30 14:31:01] 
+Pipeline complete!
+[2026-04-30 18:00:00] ==================================================
+[2026-04-30 18:00:00] ClipMaster Pipeline v2 starting...
+[2026-04-30 18:00:00] Active channels: 5
+[2026-04-30 18:00:00] 
+--- Clip Forge (fitness) ---
+[2026-04-30 18:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 18:00:00]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 18:00:08]   Ssemble processing: 69f3ed07d2cb7ed144c292c2
+[2026-04-30 18:00:09]   Processing... queued (0%)
+[2026-04-30 18:08:09]   Clips ready!
+[2026-04-30 18:08:10]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-04-30 18:08:15]   Downloading: She Did NOT Stop (score: 96)
+[2026-04-30 18:09:03]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/e_-bdtp4z2Q
+[2026-04-30 18:09:03]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:09:40]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/AYXqh1uCkg0
+[2026-04-30 18:09:40]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:09:40]   Clip Forge: 2 clips posted
+[2026-04-30 18:09:40] 
+--- Coin Clips (finance) ---
+[2026-04-30 18:09:40]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 18:09:40]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 18:09:44]   Ssemble processing: 69f3ef46d2cb7ed144c292f8
+[2026-04-30 18:19:03]   Clips ready!
+[2026-04-30 18:19:05]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-04-30 18:19:13]   Downloading: She Did Not Come To Play (score: 90)
+[2026-04-30 18:19:59]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/ImdMi9tnAo8
+[2026-04-30 18:19:59]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:20:25]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/xW3RSo8x6xw
+[2026-04-30 18:20:25]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:20:25]   Coin Clips: 2 clips posted
+[2026-04-30 18:20:25] 
+--- Spawn Point (gaming) ---
+[2026-04-30 18:20:25]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 18:20:25]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 18:20:27]   Ssemble processing: 69f3f1cad2cb7ed144c29362
+[2026-04-30 18:29:31]   Clips ready!
+[2026-04-30 18:29:32]   Downloading: 100 Sit-Ups for $100 (score: 100)
+[2026-04-30 18:29:39]   Downloading: She Did Not Miss (score: 95)
+[2026-04-30 18:30:54]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/t2A-e9nD-ZM
+[2026-04-30 18:30:54]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:31:22]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/zoQjL20Fd_g
+[2026-04-30 18:31:22]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:31:22]   Spawn Point: 2 clips posted
+[2026-04-30 18:31:22] 
+--- True Bites (crime) ---
+[2026-04-30 18:31:22]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 18:31:22]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 18:31:23]   Ssemble processing: 69f3f45bd2cb7ed144c293ad
+[2026-04-30 18:37:24]   Processing... finding_highlights (60%)
+[2026-04-30 18:39:35]   Clips ready!
+[2026-04-30 18:39:37]   Downloading: 100 Sit-Ups For $100 (score: 100)
+[2026-04-30 18:39:41]   Downloading: She Did Not Come To Play (score: 95)
+[2026-04-30 18:40:32]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/6A5IK1x1ubU
+[2026-04-30 18:40:32]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:40:49]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/84FBQTM2VYg
+[2026-04-30 18:40:49]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:40:49]   True Bites: 2 clips posted
+[2026-04-30 18:40:49] 
+--- Brain Fuel (tech) ---
+[2026-04-30 18:40:49]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-04-30 18:40:49]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-04-30 18:40:50]   Ssemble processing: 69f3f692d2cb7ed144c293e5
+[2026-04-30 18:48:10]   Clips ready!
+[2026-04-30 18:48:11]   Downloading: 100 Sit-Ups For Cash (score: 96)
+[2026-04-30 18:48:15]   Downloading: She Hit 100 Reps! (score: 100)
+[2026-04-30 18:49:00]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/qg-_F7XDfs8
+[2026-04-30 18:49:00]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:49:32]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/N-XDnAWZCAw
+[2026-04-30 18:49:32]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-04-30 18:49:32]   Brain Fuel: 2 clips posted
+[2026-04-30 18:49:32] 
+Pipeline complete!
+[2026-05-01 08:00:01] ==================================================
+[2026-05-01 08:00:01] ClipMaster Pipeline v2 starting...
+[2026-05-01 08:00:01] Active channels: 5
+[2026-05-01 08:00:01] 
+--- Clip Forge (fitness) ---
+[2026-05-01 08:00:01]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 08:00:01]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 08:00:08]   Ssemble processing: 69f4b1e78d83eef3f3065c9b
+[2026-05-01 08:09:09]   Processing... finalizing (80%)
+[2026-05-01 08:09:59]   Clips ready!
+[2026-05-01 08:10:01]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-05-01 08:10:05]   Downloading: She Came To Get Paid (score: 90)
+[2026-05-01 08:10:58]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/3cCPA7ov-JE
+[2026-05-01 08:10:58]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:11:26]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/-A_WU4D42Lc
+[2026-05-01 08:11:26]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:11:26]   Clip Forge: 2 clips posted
+[2026-05-01 08:11:26] 
+--- Coin Clips (finance) ---
+[2026-05-01 08:11:26]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 08:11:26]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 08:11:34]   Ssemble processing: 69f4b4958d83eef3f3065d03
+[2026-05-01 08:21:18]   Clips ready!
+[2026-05-01 08:21:19]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-05-01 08:21:25]   Downloading: She Did Not Stop (score: 95)
+[2026-05-01 08:22:28]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/kLYbh80gIZ4
+[2026-05-01 08:22:28]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:23:00]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/9emt3W4fnNA
+[2026-05-01 08:23:00]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:23:00]   Coin Clips: 2 clips posted
+[2026-05-01 08:23:00] 
+--- Spawn Point (gaming) ---
+[2026-05-01 08:23:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 08:23:00]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 08:23:06]   Ssemble processing: 69f4b7498d83eef3f3065d64
+[2026-05-01 08:32:33]   Clips ready!
+[2026-05-01 08:32:34]   Downloading: 100 Sit-Ups for $100 (score: 100)
+[2026-05-01 08:32:38]   Downloading: She Hit 100 No Sweat (score: 96)
+[2026-05-01 08:33:20]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/S9briIhFDM4
+[2026-05-01 08:33:20]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:33:38]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/CNoX5zn6Baw
+[2026-05-01 08:33:38]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:33:38]   Spawn Point: 2 clips posted
+[2026-05-01 08:33:38] 
+--- True Bites (crime) ---
+[2026-05-01 08:33:38]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 08:33:38]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 08:33:40]   Ssemble processing: 69f4b9c38d83eef3f3065db6
+[2026-05-01 08:33:41]   Processing... queued (0%)
+[2026-05-01 08:36:40]   Processing... transcribing_audio (40%)
+[2026-05-01 08:42:57]   Clips ready!
+[2026-05-01 08:42:59]   Downloading: 100 Sit-Ups For $100 (score: 100)
+[2026-05-01 08:43:03]   Downloading: She Did 70 Sit-Ups Easy (score: 91)
+[2026-05-01 08:43:58]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/g8q39leDar8
+[2026-05-01 08:43:58]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:44:37]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/4RTiPHzF07c
+[2026-05-01 08:44:37]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:44:37]   True Bites: 2 clips posted
+[2026-05-01 08:44:37] 
+--- Brain Fuel (tech) ---
+[2026-05-01 08:44:37]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 08:44:37]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 08:44:39]   Ssemble processing: 69f4bc568d83eef3f3065e04
+[2026-05-01 08:53:30]   Clips ready!
+[2026-05-01 08:53:32]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-05-01 08:53:35]   Downloading: She Hit 100 Reps (score: 96)
+[2026-05-01 08:54:05]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/slKJBYQaMIw
+[2026-05-01 08:54:05]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:54:40]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/SHGkwLkK9_A
+[2026-05-01 08:54:40]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 08:54:40]   Brain Fuel: 2 clips posted
+[2026-05-01 08:54:40] 
+Pipeline complete!
+[2026-05-01 12:00:00] ==================================================
+[2026-05-01 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-05-01 12:00:00] Active channels: 5
+[2026-05-01 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-05-01 12:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 12:00:00]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 12:00:12]   Ssemble processing: 69f4ea2bb6c9282b9260083b
+[2026-05-01 12:00:12]   Processing... queued (0%)
+[2026-05-01 12:04:12]   Processing... finding_highlights (60%)
+[2026-05-01 12:07:07]   Clips ready!
+[2026-05-01 12:07:08]   Downloading: 100 Sit-Ups For $100 (score: 100)
+[2026-05-01 12:07:13]   Downloading: Random Girl Does 70 Sit-Ups (score: 95)
+[2026-05-01 12:08:13]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/9p57XnuExcY
+[2026-05-01 12:08:13]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:08:41]   Uploaded to UCUm90N9YLeupbVSsxXqv4fA: https://youtube.com/shorts/0kaPkgjF510
+[2026-05-01 12:08:41]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:08:41]   Clip Forge: 2 clips posted
+[2026-05-01 12:08:41] 
+--- Coin Clips (finance) ---
+[2026-05-01 12:08:41]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 12:08:41]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 12:08:42]   Ssemble processing: 69f4ec2ab6c9282b9260088a
+[2026-05-01 12:08:43]   Processing... queued (0%)
+[2026-05-01 12:14:03]   Clips ready!
+[2026-05-01 12:14:04]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-05-01 12:14:08]   Downloading: She Hit 100 Reps Easy (score: 96)
+[2026-05-01 12:14:56]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/e5HXcS-LnOY
+[2026-05-01 12:14:56]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:15:32]   Uploaded to UC3D4vkZIdTsuMwvl424LqZQ: https://youtube.com/shorts/0-HvC2GkpgE
+[2026-05-01 12:15:33]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:15:33]   Coin Clips: 2 clips posted
+[2026-05-01 12:15:33] 
+--- Spawn Point (gaming) ---
+[2026-05-01 12:15:33]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 12:15:33]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 12:15:34]   Ssemble processing: 69f4edc5b6c9282b926008e7
+[2026-05-01 12:15:34]   Processing... queued (0%)
+[2026-05-01 12:19:34]   Processing... finding_highlights (60%)
+[2026-05-01 12:23:34]   Processing... finalizing (80%)
+[2026-05-01 12:24:38]   Clips ready!
+[2026-05-01 12:24:38]   Downloading: 100 Sit-Ups For $100 (score: 100)
+[2026-05-01 12:24:47]   Downloading: She Did 70 Sit-Ups Easy (score: 91)
+[2026-05-01 12:25:49]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/LXUKDsqghVU
+[2026-05-01 12:25:49]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:26:20]   Uploaded to UCwv43PxjJKDQdeVMJyt-dWg: https://youtube.com/shorts/aEr8F6joZlc
+[2026-05-01 12:26:20]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:26:20]   Spawn Point: 2 clips posted
+[2026-05-01 12:26:20] 
+--- True Bites (crime) ---
+[2026-05-01 12:26:20]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 12:26:20]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 12:26:21]   Ssemble processing: 69f4f04db6c9282b92600970
+[2026-05-01 12:26:22]   Processing... queued (0%)
+[2026-05-01 12:30:21]   Processing... finding_highlights (60%)
+[2026-05-01 12:33:01]   Clips ready!
+[2026-05-01 12:33:02]   Downloading: 100 Sit-Ups For Cash (score: 100)
+[2026-05-01 12:33:05]   Downloading: She Hit 100 No Sweat (score: 96)
+[2026-05-01 12:33:38]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/UGoD-4HpqmE
+[2026-05-01 12:33:38]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:34:23]   Uploaded to UC3LMxLp1Rx9bhKfUKpV3xkw: https://youtube.com/shorts/_kvcyK1TYlA
+[2026-05-01 12:34:23]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:34:23]   True Bites: 2 clips posted
+[2026-05-01 12:34:23] 
+--- Brain Fuel (tech) ---
+[2026-05-01 12:34:23]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 12:34:23]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 12:34:24]   Ssemble processing: 69f4f230b6c9282b926009eb
+[2026-05-01 12:34:25]   Processing... fetching_video (20%)
+[2026-05-01 12:39:46]   Clips ready!
+[2026-05-01 12:39:47]   Downloading: She Did 70 Reps For Cash (score: 100)
+[2026-05-01 12:39:50]   Downloading: Stopped The Wrong One (score: 96)
+[2026-05-01 12:40:36]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/xlFPmcidnZI
+[2026-05-01 12:40:36]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:41:17]   Uploaded to UCWm4I9h8Di-Rfr-FLtSDi7w: https://youtube.com/shorts/WRisDzpRQSk
+[2026-05-01 12:41:17]   Comment failed: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+[2026-05-01 12:41:17]   Brain Fuel: 2 clips posted
+[2026-05-01 12:41:17] 
+Pipeline complete!
+[2026-05-01 18:00:01] ==================================================
+[2026-05-01 18:00:01] ClipMaster Pipeline v2 starting...
+[2026-05-01 18:00:01] Active channels: 5
+[2026-05-01 18:00:01] 
+--- Clip Forge (fitness) ---
+[2026-05-01 18:00:01]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-01 18:00:01]   Source: https://www.youtube.com/watch?v=ZDMsUM5C-Q4
+[2026-05-01 18:00:07]   Ssemble processing: 69f53e87b6c9282b9260152e
+[2026-05-01 18:00:08]   Processing... queued (0%)
+Traceback (most recent call last):
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 346, in <module>
+    run()
+    ~~~^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 303, in run
+    if not ssemble_poll_status(api_key, request_id, timeout=1800):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jackserver/.openclaw/workspace/clipping/run_pipeline.py", line 55, in ssemble_poll_status
+    resp = json.loads(urllib.request.urlopen(req, timeout=15).read())
+                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+[2026-05-02 08:00:00] ==================================================
+[2026-05-02 08:00:00] ClipMaster Pipeline v2 starting...
+[2026-05-02 08:00:00] Active channels: 2
+[2026-05-02 08:00:00] 
+--- Clip Forge (fitness) ---
+[2026-05-02 08:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-02 08:00:00]   Source: https://www.youtube.com/watch?v=EeSFl2TUY3s
+[2026-05-02 08:00:06]   Ssemble processing: 69f60366b6c9282b92602497
+[2026-05-02 08:00:06]   Processing... queued (0%)
+[2026-05-02 08:04:06]   Processing... finalizing (80%)
+[2026-05-02 08:05:26]   Clips ready!
+[2026-05-02 08:05:27]   Downloading: 51 Push-Ups No Stop (score: 100)
+[2026-05-02 08:05:30]   Upload failed: 'int' object has no attribute 'rstrip'
+[2026-05-02 08:05:30]   Clip Forge: 0 clips posted
+[2026-05-02 08:05:30] 
+--- Youloveclips (entertainment) ---
+[2026-05-02 08:05:30]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-02 08:05:30]   Source: https://www.youtube.com/watch?v=Yyln3GiHLw0
+[2026-05-02 08:05:36]   Ssemble processing: 69f604b0b6c9282b926024c3
+[2026-05-02 08:05:36]   Processing... queued (0%)
+[2026-05-02 08:30:36]   Processing... finding_highlights (60%)
+[2026-05-02 08:32:12]   Clips ready!
+[2026-05-02 08:32:12]   Downloading: Cameraman Push-Up Challenge (score: 100)
+[2026-05-02 08:32:14]   Downloading: Broke Boys Still Competing (score: 92)
+[2026-05-02 08:32:16]   Downloading: Danny Gets Called Out (score: 96)
+[2026-05-02 08:32:19]   Upload failed: 'int' object has no attribute 'rstrip'
+[2026-05-02 08:32:19]   Upload failed: 'int' object has no attribute 'rstrip'
+[2026-05-02 08:32:19]   Upload failed: 'int' object has no attribute 'rstrip'
+[2026-05-02 08:32:19]   Youloveclips: 0 clips posted
+[2026-05-02 08:32:19] 
+Pipeline complete!
+[2026-05-02 12:00:00] ==================================================
+[2026-05-02 12:00:00] ClipMaster Pipeline v2 starting...
+[2026-05-02 12:00:00] Active channels: 1
+[2026-05-02 12:00:00] 
+--- Clip Forge (fitness) ---
+[2026-05-02 12:00:00]   Using campaign: Nana Prempeh [Viral Clipping]
+[2026-05-02 12:00:00]   Source: https://www.youtube.com/watch?v=1NjXgDHqD54
+[2026-05-02 12:00:06]   Ssemble processing: 69f63ba6b6c9282b92602936
+[2026-05-02 12:00:07]   Processing... queued (0%)
+[2026-05-02 12:17:07]   Processing... finding_highlights (60%)
+[2026-05-02 12:30:08]   Timeout after 1800s
+[2026-05-02 12:30:08] 
+Pipeline complete!
