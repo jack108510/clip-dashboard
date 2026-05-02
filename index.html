@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Clip Forge — Dashboard</title>
+<title>Wildrose Clips — Content Dashboard</title>
 <meta name="theme-color" content="#0f172a">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -86,7 +86,7 @@ footer{padding:20px;text-align:center;font-size:.7rem;color:var(--dim);border-to
 <body>
 
 <nav>
-  <div class="logo"><div class="logo-icon">🎬</div>Clip Forge</div>
+  <div class="logo"><div class="logo-icon">🎬</div>Wildrose Clips</div>
   <div class="nav-links">
     <a class="active" onclick="showPage('overview')">Overview</a>
     <a onclick="showPage('channels')">Channels</a>
@@ -103,6 +103,21 @@ footer{padding:20px;text-align:center;font-size:.7rem;color:var(--dim);border-to
     <button class="btn btn-ghost" onclick="scrapeWhop()">🔄 Scrape Whop Campaigns</button>
   </div>
   <div class="status-bar" id="statusBar"></div>
+  
+  <!-- Revenue Section -->
+  <div class="section-label">Revenue</div>
+  <div class="card" style="margin-bottom:24px;padding:24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;text-align:center" id="revenueGrid">
+      <div><div style="font-size:2rem;font-weight:900;color:var(--green)" id="revTotal">$0.00</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">Total Earned</div></div>
+      <div><div style="font-size:2rem;font-weight:900;color:var(--blue)" id="revPending">$0.00</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">Pending Review</div></div>
+      <div><div style="font-size:2rem;font-weight:900;color:var(--yellow)" id="revPotential">$0.00</div><div style="font-size:.72rem;color:var(--muted);margin-top:2px">Potential (All Views)</div></div>
+    </div>
+    <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+      <div style="font-size:.7rem;font-weight:700;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Revenue by Campaign</div>
+      <div id="revenueByCamp"></div>
+    </div>
+  </div>
+  
   <div class="section-label">Last Pipeline Run</div>
   <div class="log-box" id="lastLog" style="max-height:200px;margin-bottom:24px">Loading...</div>
   <div class="section-label">Active Channels</div>
@@ -143,7 +158,7 @@ footer{padding:20px;text-align:center;font-size:.7rem;color:var(--dim);border-to
   <div class="log-box" id="fullLog">Loading...</div>
 </div>
 
-<footer>Clip Forge Dashboard · Automated YouTube Clipping Pipeline</footer>
+<footer>Wildrose Clips · Content Dashboard</footer>
 
 <script>
 const API='http://localhost:5678'; // n8n placeholder
@@ -167,13 +182,51 @@ async function init(){
   const ca=await loadJSON('campaigns.json');
   const sub=await loadJSON('submitted.json');
   renderStatus(ch,ca,sub);
+  renderRevenue(ca);
   renderChannels(ch);
   renderCampaigns(ca);
   renderSubmissions(sub);
   loadLogs();
 }
 
-function renderStatus(ch,ca,sub){
+function parseCPM(cpmStr){const m=cpmStr?.match(/\$([\d.]+)\/1k/);return m?parseFloat(m[1]):0}
+function parseViews(v){return parseFloat(v.replace(/[kK]/,''))*(v.includes('k')||v.includes('K')?1000:1)}
+function parseBudget(b){const parts=b.split('/');return{paid:parseFloat(parts[0]?.replace(/[^0-9.]/g,'')||0),total:parseFloat(parts[1]?.replace(/[^0-9.]/g,'')||0)}}
+
+function renderRevenue(ca){
+  const campaigns=ca?.campaigns||[];
+  let totalEarned=0,totalPotential=0,pending=0;
+  const byCamp=[];
+  campaigns.forEach(c=>{
+    const cpm=parseCPM(c.cpm);
+    const views=parseViews(c.views||'0');
+    const earned=cpm*views/1000;
+    const budget=parseBudget(c.paid_out||'$0 / $0');
+    totalEarned+=budget.paid;
+    totalPotential+=earned;
+    byCamp.push({name:c.name,cpm,views,earned,budget:budget.paid,remaining:budget.total-budget.paid});
+  });
+  
+  // Estimate pending from submissions (not yet reviewed)
+  const subs=document.getElementById('subTable')?.querySelectorAll('tr')?.length||0;
+  // Rough estimate: if 8 clips submitted avg ~2k views each at $1/1k = ~$16 pending
+  pending=subs*2;// rough estimate
+  
+  document.getElementById('revTotal').textContent='$'+totalEarned.toFixed(2);
+  document.getElementById('revPending').textContent='~$'+pending.toFixed(2);
+  document.getElementById('revPotential').textContent='$'+totalPotential.toFixed(2);
+  
+  const el=document.getElementById('revenueByCamp');
+  el.innerHTML=byCamp.map(c=>{
+    const pct=c.budget>0?Math.round(c.earned/c.budget*100):0;
+    return `<div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(71,85,105,.2)">
+      <div style="flex:1;min-width:0"><div style="font-size:.82rem;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.name}</div>
+        <div style="font-size:.7rem;color:var(--muted)">CPM: $${c.cpm}/1K · ${c.views.toLocaleString()} views</div></div>
+      <div style="text-align:right"><div style="font-size:.88rem;font-weight:900;color:var(--green)">$${c.earned.toFixed(2)}</div>
+        <div style="font-size:.65rem;color:var(--dim)">of $${c.budget.toFixed(0)} budget</div></div>
+    </div>`;
+  }).join('');
+}
   const channels=ch?.channels||[];
   const active=channels.filter(c=>c.active).length;
   const campaigns=ca?.campaigns||[];
